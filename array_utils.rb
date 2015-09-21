@@ -3,8 +3,10 @@ module ArrayUtils
 		max= param_array
 
 		param_array.each do |element|
-			max= element unless element > max { |a, b| end
+			max= element if element > max
 		end
+
+		puts param_array.first
 	
 	max 
 
